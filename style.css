@@ -1,0 +1,77 @@
+.fondo-azul {
+  background-color: blue;
+}
+
+.imagen-decorada {
+  /* El tamaño de la imagen */
+  width: 300px;
+
+  /* PADDING: Espacio HACIA ADENTRO (entre la foto y su borde) */
+  padding: 15px;
+
+  /* Vamos a ponerle un fondo sutil al padding para que los chicos lo vean */
+  background-color: #f0f0f0;
+
+  /* Un borde para delimitar la "caja" */
+  border: 2px solid #333333;
+
+  /* MARGIN: Espacio HACIA AFUERA (para que no se pegue a los textos u otras imágenes) */
+  margin: 25px;
+}
+
+/*////////////////////////////////////////////////////////////
+
+propiedades de Flexbox
+
+/* Activamos el superpoder de Flexbox para todos los contenedores */
+.contenedor-galeria {
+  display: flex;
+}
+
+/* Las órdenes específicas de posición */
+.posicion-izquierda {
+  justify-content: flex-start; /* start = inicio/izquierda */
+}
+
+.posicion-centro {
+  justify-content: center; /* center = centro */
+}
+
+.posicion-derecha {
+  justify-content: flex-end; /* end = final/derecha */
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+.texto-rojo {
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+  font-size: 20px;
+  color: red;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/*////////////////////////////////////*/
+
+.video-contenedor {
+  display: flex;
+  width: 100%; /* ¡Esta línea es la clave para darle espacio! */
+}
+
+/* Las órdenes específicas de posición */
+.posicion-izquierda {
+  justify-content: flex-start; /* start = inicio/izquierda */
+}
+
+.posicion-centro {
+  justify-content: center; /* center = centro */
+}
+
+.posicion-derecha {
+  justify-content: flex-end; /* end = final/derecha */
+}
+
+.video-contenedor iframe {
+  width: 500px; /* Ajusta este valor al tamaño que quieras */
+  height: 280px;
+}
